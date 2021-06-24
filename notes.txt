@@ -1,0 +1,17 @@
+a więc 
+
+
+do custom activity potrzebny jest package, wgrywany bezpośrednio albo do app exchange(?).
+Package składa się z trzech części - config.json, index.html oraz customActivity.js
+
+config definiuje metadane, jakie będą parametry wejściowe i wyjściowe itp.
+
+index.html to (chyba) interfejs, który ukaże się w Journey Builderze
+
+customActivity.js jeszcze nie obczaiłem, ale wygląda mi na zbiór funkcji obsługujących wymianę informacji między Window (JB) a iframe'm
+przekazującym informacje do backendu i z powrotem.
+
+
+endpointy na CloudPage'ach obsłużą dane z formularza z index.html
+
+"arguments" > "execute" > "url" obsłuży każdy kontakt, czyli tutaj jest cała logika akcji

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <form name="myForm" method="POST">
+        
+        <input type="radio" name="action_type" value="triggered_email" id="triggered_email">
+        <label for="triggered_email">Triggered Email</label>
+
+        <div id="output-test"></div>
+
+        <div id="triggered-email-part" class="hidden">
+            <label for="DEname">Triggered Send Data Extension name:</label>
+            <input type="text" name="DEname" id="DEname">
+
+            
+        </div>
+
+        <input type="radio" name="action_type" value="journey_entry" id="journey_entry">
+        <label for="journey_entry">Journey Entry</label>
+        
+
+        <input type="hidden" name="subkey">
+        <input type="hidden" name="EmailAddress">
+    </form>
+
+    <script src="storeFormData.js"></script>
+    <script src="formStylesHandle.js"></script>
+</body>
+</html>
